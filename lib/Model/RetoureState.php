@@ -351,9 +351,9 @@ class RetoureState implements ModelInterface, ArrayAccess, \JsonSerializable
             $invalidProperties[] = "invalid value for 'refunded_vouchers', number of items must be less than or equal to 2147483647.";
         }
 
-        if ((count($this->container['refunded_vouchers']) < 1)) {
-            $invalidProperties[] = "invalid value for 'refunded_vouchers', number of items must be greater than or equal to 1.";
-        }
+//        if ((count($this->container['refunded_vouchers']) < 1)) {
+//            $invalidProperties[] = "invalid value for 'refunded_vouchers', number of items must be greater than or equal to 1.";
+//        }
 
         if ($this->container['not_refunded_vouchers'] === null) {
             $invalidProperties[] = "'not_refunded_vouchers' can't be null";
@@ -362,9 +362,9 @@ class RetoureState implements ModelInterface, ArrayAccess, \JsonSerializable
             $invalidProperties[] = "invalid value for 'not_refunded_vouchers', number of items must be less than or equal to 2147483647.";
         }
 
-        if ((count($this->container['not_refunded_vouchers']) < 1)) {
-            $invalidProperties[] = "invalid value for 'not_refunded_vouchers', number of items must be greater than or equal to 1.";
-        }
+//        if ((count($this->container['not_refunded_vouchers']) < 1)) {
+//            $invalidProperties[] = "invalid value for 'not_refunded_vouchers', number of items must be greater than or equal to 1.";
+//        }
 
         return $invalidProperties;
     }
@@ -601,9 +601,9 @@ class RetoureState implements ModelInterface, ArrayAccess, \JsonSerializable
         if ((count($refunded_vouchers) > 2147483647)) {
             throw new \InvalidArgumentException('invalid value for $refunded_vouchers when calling RetoureState., number of items must be less than or equal to 2147483647.');
         }
-        if ((count($refunded_vouchers) < 1)) {
-            throw new \InvalidArgumentException('invalid length for $refunded_vouchers when calling RetoureState., number of items must be greater than or equal to 1.');
-        }
+//        if ((count($refunded_vouchers) < 1)) {
+//            throw new \InvalidArgumentException('invalid length for $refunded_vouchers when calling RetoureState., number of items must be greater than or equal to 1.');
+//        }
         $this->container['refunded_vouchers'] = $refunded_vouchers;
 
         return $this;
@@ -635,9 +635,9 @@ class RetoureState implements ModelInterface, ArrayAccess, \JsonSerializable
         if ((count($not_refunded_vouchers) > 2147483647)) {
             throw new \InvalidArgumentException('invalid value for $not_refunded_vouchers when calling RetoureState., number of items must be less than or equal to 2147483647.');
         }
-        if ((count($not_refunded_vouchers) < 1)) {
-            throw new \InvalidArgumentException('invalid length for $not_refunded_vouchers when calling RetoureState., number of items must be greater than or equal to 1.');
-        }
+//        if ((count($not_refunded_vouchers) < 1)) {
+//            throw new \InvalidArgumentException('invalid length for $not_refunded_vouchers when calling RetoureState., number of items must be greater than or equal to 1.');
+//        }
         $this->container['not_refunded_vouchers'] = $not_refunded_vouchers;
 
         return $this;
